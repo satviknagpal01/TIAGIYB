@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=768 height=1024></canvas>
+      <canvas id="unity-canvas" width=1536 height=2048></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -58,9 +58,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/There Is A Game In Your Bug (WebGL).loader.js";
       var config = {
-        dataUrl: buildUrl + "/There Is A Game In Your Bug (WebGL).data.br",
-        frameworkUrl: buildUrl + "/There Is A Game In Your Bug (WebGL).framework.js.br",
-        codeUrl: buildUrl + "/There Is A Game In Your Bug (WebGL).wasm.br",
+        dataUrl: buildUrl + "/There Is A Game In Your Bug (WebGL).data.gz",
+        frameworkUrl: buildUrl + "/There Is A Game In Your Bug (WebGL).framework.js.gz",
+        codeUrl: buildUrl + "/There Is A Game In Your Bug (WebGL).wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "GlitchAndGrind",
         productName: "TIAGIYB",
@@ -82,8 +82,8 @@
         config.devicePixelRatio = 1;
         unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
-        canvas.style.width = "768px";
-        canvas.style.height = "1024px";
+        canvas.style.width = "1536px";
+        canvas.style.height = "2048px";
       }
       loadingBar.style.display = "block";
 
